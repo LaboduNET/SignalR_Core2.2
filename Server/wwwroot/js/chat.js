@@ -26,7 +26,7 @@ connection.start().then(function () {
 });
 
 document.getElementById("sendButton").addEventListener("click", function (event) {
-	var message = document.getElementById("messageInput").value;
+	var message = document.getElementById("Message").value;
 	connection.invoke("Send", connection.ChatKey, message).catch(function (err) {
 		return console.error(err.toString());
 	});

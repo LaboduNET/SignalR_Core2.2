@@ -1,10 +1,9 @@
 ﻿@page
 <div class="container">
-	<div class="row">&nbsp;</div>
-	<div class="row">		
-		<div class="col-12">			
-			Message...<input type="text" id="messageInput" />
-			<input type="button" id="sendButton" value="Send Message" />
+
+	<div class="row">
+		<div class="col-12">
+			<ul id="messagesList"></ul>
 		</div>
 	</div>
 	<div class="row">
@@ -13,8 +12,12 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-12">
-			<ul id="messagesList"></ul>
+		<div class="col-2">
+			Message
+		</div>
+		<div class="col-10">
+			<input type="text" id="Message" />
+			<input type="button" id="sendButton" value="Send Message" />
 		</div>
 	</div>
 </div>
